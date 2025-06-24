@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: 'https://github.com/orathaipp/gitops-repo'
     targetRevision: main
-    path: manifests/hello-world
+    path: hello-world/manifests/hello-world
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: default
