@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-world
+  name: my-react-hello
   labels:
-    app: hello-world
+    app: my-react-hello
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello-world
+      app: my-react-hello
   template:
     metadata:
       labels:
-        app: hello-world
+        app: my-react-hello
     spec:
       containers:
-        - name: hello-world
-          image: my-react-hello:v1
+        - name: my-react-hello
+          image: my-react-hello:latest
           ports:
             - containerPort: 80
