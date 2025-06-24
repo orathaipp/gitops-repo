@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: hello-world
-          image: hello-world:latest
+          image: my-react-hello:v1
           ports:
             - containerPort: 80
