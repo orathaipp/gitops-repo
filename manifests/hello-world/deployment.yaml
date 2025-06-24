@@ -17,5 +17,6 @@ spec:
       containers:
         - name: my-react-hello
           image: my-react-hello:v1
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
